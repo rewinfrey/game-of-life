@@ -307,7 +307,6 @@
       $('.selected').removeClass("selected");
       $(this).addClass("selected");
       $('#hidden_stop').val(true);
-      $('#hidden_stop').html("Stop");
       return window.setTimeout(function() {
         var selection;
         game.initialize_universe();
@@ -317,6 +316,7 @@
         sandman.universe = game.universe;
         return $('#start').unbind('click').click(function() {
           $('#hidden_stop').val(false);
+          $('#stop').html("Stop");
           return start_game(sandman, frame_rate);
         });
       }, 500);

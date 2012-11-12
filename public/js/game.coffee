@@ -176,7 +176,6 @@ $(document).ready ->
     $('.selected').removeClass("selected")
     $(this).addClass("selected")
     $('#hidden_stop').val(true)
-    $('#hidden_stop').html("Stop")
     window.setTimeout(
       () =>
         game.initialize_universe()
@@ -186,6 +185,7 @@ $(document).ready ->
         sandman.universe = game.universe
         $('#start').unbind('click').click () ->
           $('#hidden_stop').val(false)
+          $('#stop').html("Stop")
           start_game(sandman, frame_rate)
       ,
         500
