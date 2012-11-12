@@ -288,7 +288,7 @@
     animate = new Animate("game", canvas_height, canvas_width, cell_size, frame_rate);
     game = new Game(canvas_height, canvas_width, cell_size);
     game.initialize_universe();
-    game.initial_state(gospers_glider_gun);
+    game.initial_state(starting_condition("gospers_glider_gun"));
     animate.draw_universe(game.universe);
     sandman = new SandMan(game.universe, animate, 500);
     $('#hidden_stop').val(false);
