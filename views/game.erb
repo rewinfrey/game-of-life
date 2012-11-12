@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/game.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="/js/game.js"></script>
+  </head>
+  <body>
+    <h1>Conway's Game Of Life</h1>
+    <div class="explanation">
+      <p class="text_left">1. Any live cell with fewer than two live neighbours dies, as if caused by under-population.</p>
+      <p class="text_left">2. Any live cell with two or three live neighbours lives on to the next generation.</p>
+      <p class="text_left">3. Any live cell with more than three live neighbours dies, as if by overcrowding.</p>
+      <p class="text_left">4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</p>
+    </div>
+    <div id="game_options">
+      <button id="gospers_glider_gun" class="selection selected">Gaspers Glider Gun</button>
+      <button id="r_pentomino" class="selection">The R-pentomino</button>
+      <button id="diehard" class="selection">Diehard</button>
+      <button id="acorn" class="selection">Acorn</button>
+      <button id="random" class="selection">Random</button>
+    </div>
+    <div id="canvas">
+      <canvas id="game" width="800" height="400" style="margin-top: 20px;">Your browser does not support HTML5 :(</canvas>
+    </div>
+    <div id="game_controls">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <div id="hidden_stop" value="false" hidden="true">test</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+body {
+  font-family: monaco;
+}
+
+h1 {
+  width: 399px;
+  margin: 40px auto;
+  font-size: 30px;
+}
+
+h3 {
+  width: 685px;
+  margin: 30px auto 0 auto;
+  font-size: 18px;
+}
+
+button {
+  display: block;
+  height: 40px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+#canvas {
+  width: 741px;
+  margin: auto;
+}
+
+#steps {
+  height: 25px;  
+}
+
+#game_options {
+  float: left;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+#game_controls {
+  float: right;
+  margin-right: 140px;
+  margin-top: -372px;
+}
+
+.selected {
+  background-color: #cfcfcf;
+}
+
+.explanation {
+  width: 1038px;
+  margin: auto;
+}
+
+.text_right {
+  text-align: right;
+  margin-right: 88px;
+}
+
+.text_left {
+  text-align: left;
+  margin-left: 88px;
+}
