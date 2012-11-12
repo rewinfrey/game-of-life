@@ -176,6 +176,7 @@ $(document).ready ->
     $('.selected').removeClass("selected")
     $(this).addClass("selected")
     $('#hidden_stop').val(true)
+    $('#hidden_stop').html("Stop")
     window.setTimeout(
       () =>
         game.initialize_universe()

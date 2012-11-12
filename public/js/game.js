@@ -307,6 +307,7 @@
       $('.selected').removeClass("selected");
       $(this).addClass("selected");
       $('#hidden_stop').val(true);
+      $('#hidden_stop').html("Stop");
       return window.setTimeout(function() {
         var selection;
         game.initialize_universe();
