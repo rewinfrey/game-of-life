@@ -1,4 +1,4 @@
-Conways Game Of Life
+Conway's Game Of Life
 ===============
 
 [Demo](http://visual-game-of-life.rickwinfrey.com)
