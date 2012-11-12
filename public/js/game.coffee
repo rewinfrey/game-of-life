@@ -141,21 +141,8 @@ class Animate
         this.ctx.fillRect(current_cell.x * this.stroke, current_cell.y * this.stroke, this.stroke, this.stroke)
 
 $(document).ready ->
-
-  start = []
-  start[0] = new Cell(19,15)
-  start[1] = new Cell(20,15)
-  start[2] = new Cell(20,16)
-  start[3] = new Cell(24,16)
-  start[4] = new Cell(25,16)
-  start[5] = new Cell(26,16)
-  start[6] = new Cell(25,14)
-  start[7] = new Cell(5, 5)
-  start[8] = new Cell(6, 5)
-  start[9] = new Cell(7, 5)
-
   # number in milliseconds to pause between animation frames
-  frame_rate = 50
+  frame_rate = 100
 
   # number in pixels to determine size of individual cells (as a square)
   cell_size = 10
